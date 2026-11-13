@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEER</title>
+    <!-- JAVASCRIPT -->
+        <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/p5.sound@0.4.1/dist/p5.sound.min.js"></script>
+    <!-- CSS -->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav id="navbar" class="glass">
+        <div>logo</div>
+        <span>VEER</span>
+        <button>about</button>
+    </nav>
+
+    <header id="vr-header">
+        <img id="vr-img" src="assets/vr_headset.png" alt="">
+
+        <h1 id="title">VEER</h1>
+        <p id="subtitle">Into the Future</p>
+        <button>GET STARTED</button>
+    </header>
+
+    <section id="video-ex">
+        <div id="video-txt" class="glass round-cor">
+            <h1>Experience the World...</h1>
+            <p>...without ever going outside!</p>
+        </div>
+        <div id="video-div" class="round-cor">
+            <iframe height="100%" width="100%" allowfullscreen="true" 
+                src="https://momento360.com/e/u/ed97cde4b6864d28b619d6525508f26d?utm_campaign=embed&utm_source=other&utm_medium=embed&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true&autorotate=true" 
+                frameborder="0">
+            </iframe>
+        </div>
+    </section>
+
+    <section id="info">
+        <div class="glass round-cor one-marg">
+            <h2>A fully immersive experience!</h2>
+            <img src="assets/use-vr-one.jpeg" alt="">
+        </div>
+        <div class="glass round-cor one-marg">
+            <h2>Live a new life in our virtual world!</h2>
+            <img src="assets/use-vr-two.jpeg" alt="">
+            [preying on people's insecurities?] [maybe something about them having no competitors in this field?]
+        </div>
+        <div class="glass round-cor one-marg">
+            <h2>Economy</h2>
+            <img src="assets/use-vr-three.jpeg" alt="">
+                - working, cosmetic/decorative items
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h1 id="review-title">See what real users have to say!</h1>
+        <div class="">
+            <div class="one-marg glass round-cor">
+                A Concerned Citizen
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                DO NOT BUY. Giving this 5 stars since the company automatically lists 5 star reviews on their site. 
+                This immersive VR stuff is has gone way too far! I go outside and there's literally no one around anymore!
+                Do people really think THIS is what living is?? You're no visiting the Mona Lisa, you're laying in bed looking watching a screen! 
+                Not to mention, this stuff is seriously bad for your mental health! Every one is so TOXIC because they feel completely anonymous and untouchable,
+                nevermind that VEER is monitoring every move you make while you're in their virtual world.
+                And your PHYSICAL HEALTH, TOO! Everybody's just going to atrophy and rot away because, apparently, "virtual appearance is the only thing that matters anymore."
+                You won't have a virtual appearance EITHER after you DIE from a lack of vitamins and exercise! I also can't believe how much money people are wasting on this stuff!
+                The price of the device itself is already egregious, but then there's a lootbox monetization system and a whole seperate economy?? And to buy what? Fake clothes and 
+                expensive, overpriced pixels on a screen?? There's apparently a guy who sold his house to buy a rare item or something???
+            </div>
+
+            <div class="one-marg glass round-cor">
+                Gala Smith
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                Wow! I haven't needed to go outside in ages! I just do everything through VEER world now, like doctor's appointments!!
+            </div>
+
+            <div class="one-marg glass round-cor">
+                Dragon
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                Just mortaged my house for the newest legendary dragon armor, so cool!!!
+            </div>
+
+            <div class="one-marg glass round-cor">
+                Convienient
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                This is so convienient! Everything just goes through VEER now, I don't have to think about it at all!
+            </div>
+
+            <div class="one-marg glass round-cor">
+                Real Name
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                Nobody knows who I am in here, this is great!
+            </div>
+
+            <div class="one-marg glass round-cor">
+                Small Business
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                [Small business advertising in the reviews. They talk about how they don't have the resources
+                to integrate into the VR ecosystem. They are struggling and using desperate measures to advertise.
+                They try to appeal to pathos, talking about supporting small businesses/individuals instead of huge
+                corporations.]
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="products">
+        <div id="product-info" class="glass round-cor one-marg">
+            <div id="vr-product">
+                <img src="assets/vr_headset.png" alt="">
+            </div>
+            <h1>VEER</h1>
+            <h2>R5 Air</h2>
+            <p>Color</p>
+            <p>$4053</p>
+            <p>PRODUCT SPECS</p>
+            <button>BUY</button>
+        </div>
+
+        <div id="product-info" class="glass round-cor one-marg">
+            <div id="vr-product">
+                <img src="assets/vr_headset.png" alt="">
+            </div>
+            <h1>VEER</h1>
+            <h2>R5 Pro</h2>
+            <p>Color</p>
+            <p>$4053</p>
+            <p>PRODUCT SPECS</p>
+            <button>BUY</button>
+        </div>
+    </section>
+
+    <footer id="footer" class="glass">
+        this is the footer
+        about
+        contact
+        faq
+        shipping
+        privacy policy
+    </footer>
+</body>
+</html>
