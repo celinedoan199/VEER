@@ -4,35 +4,96 @@
 }
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
-
 body {
     background-color: var(--bg-color);
     color: var(--light-color);
     background-image: linear-gradient(to bottom, #27101A, #140c0f);
+    font-family: "futura-pt";
 }
+/* FONTS */
+.futura-pt-book {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.futura-pt-heavy {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.futura-pt-book-ob {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.futura-pt-bold {
+    font-family: "futura-pt-bold", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 nav {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
     position: sticky;
     top: 0;
     overflow: hidden;
-    display: block;
-    /* float: left; */
-    z-index: 1;
+    /* display: block; */
+    z-index: 4;
+    ul li{
+        float:right;
+    }  
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
 }
 .one-marg {
     margin: 1rem;
 }
+.one-pad {
+    padding: 1rem;
+}
 .round-cor {
     border-radius: 1rem;
 }
+.round-cor-twol {
+    border-radius: 1rem 0 0 1rem;
+}
+.round-cor-twor {
+    border-radius: 0rem 1rem 1rem 0rem;
+}
 .glass {
     /* From https://css.glass */
-        background: rgba(205, 90, 121, 0.365);
+    background-image: linear-gradient(to bottom, rgba(205, 90, 121, 0.365), rgba(228, 167, 185, 0.2));
+        /* background: rgba(205, 90, 121, 0.365); */
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(6px);
         -webkit-backdrop-filter: blur(6px);
         border: .1rem solid rgba(228, 167, 185, 0.3);
         padding: 1rem;
+}
+.two-col {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: auto;
+    gap: 3rem;
+    margin: 1rem 0 4rem -1rem;
+}
+.two-col-pl {
+    display: grid;
+    grid-template-columns: auto 30%;
+    grid-template-rows: auto;
+    gap: 3rem;
+    margin: 1rem 0 4rem -1rem;
 }
 h1 {
     font-size: 3rem;
@@ -41,15 +102,19 @@ h1 {
     text-align: center;
     font-size: 5rem;
     margin-top: 1rem;
+    margin-bottom: -.5rem;
 }
     #subtitle {
         text-align: center;
+        margin-bottom: 1.1rem;
+        font-size: 1.5rem;
     }
+    
 /* HEADER */
 #vr-header {
     background-color:var(--bg-color);
     color: aliceblue;
-    padding: 2rem 2rem 4rem 2rem;
+    padding: 2rem 0rem 4rem 0rem;
     margin-bottom: 3rem;
     button {
         display: block;
@@ -58,69 +123,70 @@ h1 {
         margin-top: 1rem;
     }
     background-image: linear-gradient(to bottom, #661E31, #27101A);
+    position: relative;
+    z-index: 2;
 }
-    #vr-img {
+    .vr-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 35rem;
     transition: transform 0.3s ease;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     }   
-    #vr-img:hover {
+    .vr-img:hover {
         transform: scale(1.05);
-        z-index: 2;
+        z-index: 3;
     }
+    /* video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 25%;
+        mix-blend-mode: screen;
+        z-index: 1;
+    } */
 
 #video-ex {
-    display: grid;
+    /* display: grid;
     grid-template-columns: .5fr auto;
     grid-template-rows: auto;
-    gap: 3rem;
-    margin: 1rem 0 1rem -1rem;
+    gap: 3rem; */
+    margin: 1rem 0 4rem 0rem;
+    scroll-margin-top: 4rem;
 }
     #video-div {
         background-color: black;
-        min-height: 30rem;
+        min-height: 40rem;
         min-width: 100%;
     }
-    #video-txt {
+    .video-txt {
         /* max-width: 90%; */
         padding: 2rem 2rem 2rem 3rem;
+        min-height: 40%;
+        align-self: center;
+        align-content: center;
+    }
+    .video-txt-r {
+        /* max-width: 90%; */
+        padding: 2rem 2rem 2rem 2rem;
         min-height: 60%;
         align-self: center;
+        align-content: center;
     }
-#info {
-    padding: 0 5rem 0 5rem;
-}
 #reviews {
     padding: 0 4rem 0 2rem;
 
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto;
-    gap: 1rem;
+    gap: 2rem;
     margin: 3rem 0 0rem 4rem;
 }
     #review-title {
         padding-top: 3rem;
-    }
-#product-info{
-    margin: 1rem 1rem 3rem 1rem;
-    padding: 2rem;
-    text-align: center;
-}
-    #vr-product {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        transition: transform 0.3s ease;
-        margin-bottom: 1.5rem;
-        max-width: 35%;
-    }
-    #vr-product:hover {
-        transform: scale(1.05);
-        z-index: 2;
     }
 
 button{
@@ -130,10 +196,17 @@ button{
     backdrop-filter: blur(6.1px);
     -webkit-backdrop-filter: blur(6.1px);
     border: .1rem solid rgba(215, 237, 243, 0.7);
-    padding: .3rem 1rem .3rem 1rem;
+    padding: .4rem 1rem .4rem 1rem;
     color: aliceblue;
     font-weight: bold;
     text-decoration: none !important;
+}
+button:hover {
+    background: rgba(205, 90, 121, 0.365);
+    color:rgba(242, 247, 249);
+    transform: scale(1.05);
+    transition: transform 0.15s ease;
+    cursor: pointer;
 }
 img {
     width: 100%;
@@ -141,12 +214,29 @@ img {
 }
 
 #footer {
-    padding: 1rem;
+    padding: 1.5rem 2rem 2rem 3rem;
     /* background-color: aliceblue; */
     margin-top: 1rem;
+    p {
+        font-size: .9rem;
+        margin: .1rem;
+    }
+    div {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        /* grid-template-rows: auto auto; */
+        gap: 0.2rem;
+        max-width: 70%;
+        margin-bottom: .8rem;
+        p:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        }
+    }
 }
 #info {
-    margin: 2rem;
+    margin: 1rem 0 4rem 0rem;
+
 }
  .checked {
     color: orange;
@@ -156,7 +246,87 @@ img {
     grid-template-columns: auto auto;
     grid-template-rows: auto;
     margin: 1rem 5rem;
+    margin-bottom: 2rem;
 }
+    .product-info{
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 2rem;
+    text-align: center;
+    align-content: center;
+    }
+    #vr-product {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition: transform 0.3s ease;
+        margin-bottom: 1.5rem;
+        max-width: 50%;
+    }
+    #vr-product:hover {
+        transform: scale(1.05);
+        z-index: 2;
+    }
+    #r5-lite {
+        filter: brightness(70%);
+    }
 h2 {
     font-size: 2rem;
+    margin: .5rem;
+}
+p {
+    font-size: 1.1rem;
+    margin: 1rem;
+    line-height: 1.4rem;
+}
+sup {
+    vertical-align: super;
+    margin: -.5rem 0 0 -.5rem;
+}
+#shop {
+    scroll-margin-top: 6rem;
+}
+.prod-name {
+    font-weight: bold;
+    font-size: 2rem;
+}
+.price {
+    font-size: 1.5rem;
+}
+.cust-name {
+    font-weight: bold;
+    margin: 0 0 .7rem 0;
+}
+.headings {
+    font-size: clamp(1rem, 4cqi, 3.5rem);
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 20%, black 70%, transparent);
+}
+
+.carousel-track {
+    display: flex;
+    gap: 10rem;
+    width: max-content;
+    animation: scroll 25s linear infinite;
+}
+.carousel:hover .carousel-track {
+    animation-play-state: paused;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+.info-img {
+    align-self: center;
+}
+a {
+    color: aliceblue;
+    text-decoration: none;
 }

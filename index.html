@@ -11,162 +11,250 @@
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- TYPEFACES -->
+        <!-- FUTURA -->
+        <link rel="stylesheet" href="https://use.typekit.net/cun0mzn.css">
 </head>
 <body>
+    <div id="top"></div>
     <nav id="navbar" class="glass">
-        <div>logo</div>
-        <span>VEER</span>
-        <button>about</button>
+        <div><a href="#top">logo</a></div>
+        <ul>
+            <li><a href="#shop">
+                <button>SHOP</button>
+            </a>
+            </li>
+        </ul>        
     </nav>
 
     <header id="vr-header">
-        <img id="vr-img" src="assets/vr_headset.png" alt="">
+        <div class="carousel">
+            <div class="carousel-track">
+                <img class="vr-img" src="assets/vr_headset.png" alt="">
+                <img class="vr-img" src="assets/veer-air.png" alt="">
+                <img class="vr-img" src="assets/veer-r4.png" alt="">
+
+                <img class="vr-img" src="assets/vr_headset.png" alt="">
+                <img class="vr-img" src="assets/veer-air.png" alt="">
+                <img class="vr-img" src="assets/veer-r4.png" alt="">
+            </div>
+        </div>        
 
         <h1 id="title">VEER</h1>
         <p id="subtitle">Into the Future</p>
-        <button>GET STARTED</button>
+        <a href="#video-ex">
+            <button>GET STARTED</button>
+        </a>
     </header>
 
     <section id="video-ex">
-        <div id="video-txt" class="glass round-cor">
-            <h1>Experience the World...</h1>
-            <p>...without ever going outside!</p>
+        <div id="" class="video-txt">
+            <h1 class="bold" style="margin: 1rem 1rem 1rem 0; font-size: 3.5rem;">
+                Experience the World...</h1>
         </div>
-        <div id="video-div" class="round-cor">
-            <iframe height="100%" width="100%" allowfullscreen="true" 
-                src="https://momento360.com/e/u/ed97cde4b6864d28b619d6525508f26d?utm_campaign=embed&utm_source=other&utm_medium=embed&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true&autorotate=true" 
+        <div id="video-div" class="">
+            <iframe id="video-div" height="100%" width="100%" allowfullscreen="true" 
+                src="https://momento360.com/e/u/ed97cde4b6864d28b619d6525508f26d?utm_campaign=embed&utm_source=other&utm_medium=embed&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true&autorotate=true"
                 frameborder="0">
             </iframe>
         </div>
+        <h1 class="video-txt bold one-marg" style="text-align: right; font-size: 3.5rem;"
+            >...without ever going outside!</h1>
     </section>
 
     <section id="info">
-        <div class="glass round-cor one-marg">
-            <h2>A fully immersive experience!</h2>
-            <img src="assets/use-vr-one.jpeg" alt="">
+        <div class="two-col">
+            <div class="glass video-txt round-cor-twor">
+                <h1 class="headings bold">A fully immersive experience!</h1>
+                <p>With VEER, VR gets real! Absorb yourself in a full sensory experience nearly indistinguishable from real life!
+                    Thanks to VEER, leaving the house will become a thing of the past.
+                </p>
+            </div>
+            <img class="info-img round-cor-twol" src="assets/use-vr-one.jpeg" alt="">
         </div>
-        <div class="glass round-cor one-marg">
-            <h2>Live a new life in our virtual world!</h2>
-            <img src="assets/use-vr-two.jpeg" alt="">
-            [preying on people's insecurities?] [maybe something about them having no competitors in this field?]
+        <div class="two-col-pl">
+            <img class="info-img round-cor" src="assets/use-vr-two.jpeg" alt="">
+            <div class="glass round-cor-twol video-txt-r">
+                <h1 class="bold headings">
+                    Live a new life in our virtual world!
+                    <sup style="font-size: 1rem;">*</sup>
+                </h1>
+                <p>Have you ever wished you could hit the reset button and start life anew? 
+                    Well then look no further, because in VEER World™ you can create your own custom avatar
+                    and build yourself an entirely new life with absolutely no ties to the real world!
+                <sup style="font-size: .8rem; margin-left: .05rem;">**</sup></p>
+            </div>
         </div>
-        <div class="glass round-cor one-marg">
-            <h2>Economy</h2>
-            <img src="assets/use-vr-three.jpeg" alt="">
-                - working, cosmetic/decorative items
+        <div class="two-col">
+            <div class="glass round-cor-twor video-txt">
+                <h1 class="bold headings">Play for Pay!</h1>
+                <p>No other VR experience on the market is as comprehensive as ours, 
+                    and that includes our robust economic structure! 
+                    In VEER World™, you can complete fun and engaging tasks for VEER Tokens, 
+                    which can be exchanged for real life currency
+                    or traded for virtual items!
+                    These items may include beautiful cosmetics or amazing utilities!
+                </p>
+            </div>
+            <img class="info-img round-cor-twol" src="assets/use-vr-three.jpeg" alt="">
         </div>
     </section>
 
     <section id="reviews">
-        <h1 id="review-title">See what real users have to say!</h1>
+        <h1 id="review-title" style="font-size: 4rem;" class="bold"
+        >See what real users have to say!</h1>
         <div class="">
-            <div class="one-marg glass round-cor">
-                A Concerned Citizen
+            <div class="one-marg glass round-cor" style="padding: 1.5rem;">
+                <p class="cust-name">A Concerned Citizen</p>
                 <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                DO NOT BUY. Giving this 5 stars since the company automatically lists 5 star reviews on their site. 
-                This immersive VR stuff is has gone way too far! I go outside and there's literally no one around anymore!
-                Do people really think THIS is what living is?? You're no visiting the Mona Lisa, you're laying in bed looking watching a screen! 
-                Not to mention, this stuff is seriously bad for your mental health! Every one is so TOXIC because they feel completely anonymous and untouchable,
-                nevermind that VEER is monitoring every move you make while you're in their virtual world.
-                And your PHYSICAL HEALTH, TOO! Everybody's just going to atrophy and rot away because, apparently, "virtual appearance is the only thing that matters anymore."
-                You won't have a virtual appearance EITHER after you DIE from a lack of vitamins and exercise! I also can't believe how much money people are wasting on this stuff!
-                The price of the device itself is already egregious, but then there's a lootbox monetization system and a whole seperate economy?? And to buy what? Fake clothes and 
-                expensive, overpriced pixels on a screen?? There's apparently a guy who sold his house to buy a rare item or something???
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="bold" style="margin-left: .5rem; font-size: 1.1rem;">DO NOT BUY.</span>
+                <p>
+                    Giving this 5 stars since the company automatically lists 5 star reviews on their site. 
+                    This immersive VR stuff is has gone way too far! I go outside and there's literally no one around anymore!
+                    Do people really think THIS is what living is?? You're no visiting the Mona Lisa, you're laying in bed looking watching a screen! 
+                    Not to mention, this stuff is seriously bad for your mental health! Every one is so TOXIC because they feel completely anonymous and untouchable,
+                    nevermind that VEER is monitoring every move you make while you're in their virtual world.
+                    And your PHYSICAL HEALTH, TOO! Everybody's just going to atrophy and rot away because, apparently, "virtual appearance is the only thing that matters anymore."
+                    You won't have a virtual appearance EITHER after you DIE from a lack of vitamins and exercise! I also can't believe how much money people are wasting on this stuff!
+                    The price of the device itself is already egregious, but then there's a lootbox monetization system and a whole seperate economy?? And to buy what? Fake clothes and 
+                    expensive, overpriced pixels on a screen?? There's apparently a guy who sold his house to buy a rare item or something???
+                </p>
             </div>
 
-            <div class="one-marg glass round-cor">
-                Gala Smith
+            <div class="one-marg glass round-cor" style="padding: 1.5rem;">
+                <p class="cust-name">Gala Smith</p>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                Wow! I haven't needed to go outside in ages! I just do everything through VEER world now, like doctor's appointments!!
+                <span class="bold" style="margin-left: .5rem; font-size: 1.1rem;">Amazing!</span>
+                <p>Wow! I haven't needed to go outside in ages! I just do everything through VEER world now, like doctor's appointments!!</p>
             </div>
 
-            <div class="one-marg glass round-cor">
-                Dragon
+            <div class="one-marg glass round-cor" style="padding: 1.5rem;">
+                <p class="cust-name">Arthur George</p>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                Just mortaged my house for the newest legendary dragon armor, so cool!!!
+                <span class="bold" style="margin-left: .5rem; font-size: 1.1rem;">Legendary!!</span>
+                <p>Just mortaged my house for the newest legendary dragon armor, so cool!!!</p>
             </div>
 
-            <div class="one-marg glass round-cor">
-                Convienient
+            <div class="one-marg glass round-cor" style="padding: 1.5rem;">
+                <p class="cust-name">Calliope Bryn</p>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                This is so convienient! Everything just goes through VEER now, I don't have to think about it at all!
+                <span class="bold" style="margin-left: .5rem; font-size: 1.1rem;">Convenient!</span>
+                <p>This is so convenient! Everything just goes through VEER now, I don't have to think about it at all!</p>
             </div>
 
-            <div class="one-marg glass round-cor">
-                Real Name
+            <div class="one-marg glass round-cor" style="padding: 1.5rem;">
+                <p class="cust-name">John H Hammock II</p>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                Nobody knows who I am in here, this is great!
+                <span class="bold" style="margin-left: .5rem; font-size: 1.1rem;">Truly Anonymous</span>
+                <p>Nobody knows who I am in here, this is great!</p>
             </div>
 
-            <div class="one-marg glass round-cor">
-                Small Business
+            <div class="one-marg glass round-cor" style="padding: 1.5rem;">
+                <p class="cust-name">Susie's Shop</p>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                [Small business advertising in the reviews. They talk about how they don't have the resources
-                to integrate into the VR ecosystem. They are struggling and using desperate measures to advertise.
-                They try to appeal to pathos, talking about supporting small businesses/individuals instead of huge
-                corporations.]
+                <span class="bold" style="margin-left: .5rem; font-size: 1.1rem;">Support Small Businesses!</span>
+                <p>Stop wasting money on pixels and come to Susie's Shop where you can buy real things that really last!
+                As a small business, we don't have the resources to get into all this VR stuff, 
+                but we make up for that by actually caring about our customers! Unlike the big coportations 
+                trying to drown out the little guys like us! Buy from people who care, Shop at Susie's!!
+                </p>
+                
             </div>
 
         </div>
     </section>
-    
+
+    <div id="shop" class="video-txt one-marg">
+        <h1 class="bold" style="margin: 0 0 -1rem 2rem;"
+        >Shop Now!</h1>
+    </div>
+
     <section id="products">
-        <div id="product-info" class="glass round-cor one-marg">
+        <div id="" class="product-info glass round-cor one-marg">
+            <!-- PRO -->
             <div id="vr-product">
                 <img src="assets/vr_headset.png" alt="">
             </div>
-            <h1>VEER</h1>
-            <h2>R5 Air</h2>
-            <p>Color</p>
-            <p>$4053</p>
-            <p>PRODUCT SPECS</p>
+            <h2 class="prod-name">R5 Pro</h2>
+            <p class="price">$4053</p>
+            <p class="italic">Available in White!</p>
+            <p>Our most immersive experience yet!
+                Offers all 5 senses using the lastest technology!
+            </p>
             <button>BUY</button>
         </div>
-
-        <div id="product-info" class="glass round-cor one-marg">
+        <!-- AIR -->
+        <div id="" class="product-info glass round-cor one-marg">
             <div id="vr-product">
-                <img src="assets/vr_headset.png" alt="">
+                <img id="r5-air" src="assets/veer-air.png" alt="">
             </div>
-            <h1>VEER</h1>
-            <h2>R5 Pro</h2>
-            <p>Color</p>
-            <p>$4053</p>
-            <p>PRODUCT SPECS</p>
+            <h2 class="prod-name">R5 Air</h2>
+            <p class="price">$3853</p>
+            <p class="italic">Available in White!</p>            
+            <p>Offers a nearly comparable experience to the Pro model, 
+                but in a lighter and more compact form!</p>
+            <button>BUY</button>
+        </div>
+        <!-- LITE -->
+        <div id="" class="product-info glass round-cor one-marg">
+            <div id="vr-product">
+                <img id="r5-lite" src="assets/vr_headset.png" alt="">
+            </div>
+            <h2 class="prod-name">R5 Lite</h2>
+            <p class="price">$3243</p>
+            <p class="italic">Available in Silver!</p>
+            <p>Offers all senses except taste!</p>
+            <button>BUY</button>
+        </div>
+        <!-- PREV GEN -->
+        <div id="" class="product-info glass round-cor one-marg">
+            <div id="vr-product">
+                <img id="r4" src="assets/veer-r4.png" alt="">
+            </div>
+            <h2 class="prod-name">R4</h2>
+            <p class="price">$3043</p>
+            <p class="italic">Available in White!</p>
             <button>BUY</button>
         </div>
     </section>
 
     <footer id="footer" class="glass">
-        this is the footer
-        about
-        contact
-        faq
-        shipping
-        privacy policy
+        <div>
+            <p>About Us</p>
+            <p>Contact</p>
+            <p>FAQ</p>
+            <p>Shipping</p>
+            <p>Privacy Policy</p>
+            <p>Returns</p>
+            <p>Account</p>
+            <p>Shop</p>
+        </div>
+        <p class="asterisk italic">*VEER is not legally responsible for anything that occurs in the virtual world.</p>
+        <p class="asterisk italic">**VEER still reserves the right to collect and store any data regarding actions taken by users in the virtual world.</p>
     </footer>
 </body>
 </html>
