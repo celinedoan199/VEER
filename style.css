@@ -104,6 +104,9 @@ nav {
     gap: 3rem;
     margin: 2rem 0 6rem 0rem;
 }
+iframe {
+    pointer-events: none;
+}
 h1 {
     font-size: 3rem;
 }
