@@ -381,6 +381,9 @@ a {
         grid-template-rows: auto auto;
         gap: 3rem;
         margin: 2rem 0 6rem 0rem;
+        .info-img {
+            grid-row: 2 / 3;
+        }
     }
     .info-txt {
         margin: 0 3rem 0 0;
