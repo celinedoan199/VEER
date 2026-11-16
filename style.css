@@ -5,6 +5,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body {
     background-color: var(--bg-color);
@@ -41,6 +42,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 
+
     position: sticky;
     top: 0;
     overflow: hidden;
@@ -49,6 +51,10 @@ nav {
     ul li{
         float:right;
     }  
+    
+}
+#navbar{
+ padding: 1rem 2rem 1rem 2rem;
 }
 #nav-logo {
     max-width: 4rem;
@@ -89,14 +95,14 @@ nav {
     grid-template-columns: 30% auto;
     grid-template-rows: auto;
     gap: 3rem;
-    margin: 2rem 0 6rem -1rem;
+    margin: 2rem 0 6rem 0rem;
 }
 .two-col-pl {
     display: grid;
     grid-template-columns: auto 30%;
     grid-template-rows: auto;
     gap: 3rem;
-    margin: 2rem 0 6rem -1rem;
+    margin: 2rem 0 6rem 0rem;
 }
 h1 {
     font-size: 3rem;
@@ -244,7 +250,6 @@ img {
 }
 #info {
     margin: 1rem 0 4rem 0rem;
-
 }
  .checked {
     color: orange;
@@ -262,7 +267,7 @@ img {
     text-align: center;
     align-content: center;
     }
-    #vr-product {
+    .vr-product {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -270,7 +275,7 @@ img {
         margin-bottom: 1.5rem;
         max-width: 50%;
     }
-    #vr-product:hover {
+    .vr-product:hover {
         transform: scale(1.05);
         z-index: 2;
     }
@@ -292,6 +297,7 @@ sup {
 }
 #shop {
     scroll-margin-top: 6rem;
+    margin: 0 0 -1rem 2rem
 }
 .prod-name {
     font-weight: bold;
@@ -313,7 +319,6 @@ sup {
   width: 100%;
   mask-image: linear-gradient(to right, transparent, black 20%, black 70%, transparent);
 }
-
 .carousel-track {
     display: flex;
     gap: 10rem;
@@ -341,7 +346,88 @@ a {
 
 /* MEDIA QUERIES */
 @media screen and (max-width:48rem){
+    #navbar {
+        padding: 1rem;
+    }
+    .carousel {
+        margin: 1rem 0 5rem 0;
+    }
+    .carousel img{
+        width: 10%;
+    }
+    .carousel-track {
+        gap: 5rem;
+        animation: scroll 15s linear infinite;
+    }
+    #title {
+        width: 20rem;
+    }
+    .headings {
+        font-size: clamp(1rem, 10cqi, 3.5rem);
+    }
+    #info {
+        margin: 0 0 -4rem 0;
+    }
     .two-col {
         display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 3rem;
+        margin: 2rem 0 6rem 0rem;
+    }
+    .two-col-pl {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 3rem;
+        margin: 2rem 0 6rem 0rem;
+    }
+    .info-txt {
+        margin: 0 3rem 0 0;
+    }
+    .info-txt-r {
+        margin: 0 0rem 0 3rem;
+    }
+    .info-img {
+        border-radius: 0;
+    }
+    #reviews {
+    padding: 0 0rem 0 0rem;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    margin: 0rem 1rem 0rem 1rem;
+    }
+    #review-title {
+        margin: 0 1rem 0 1rem;
+    }
+    #shop {
+        margin: 2rem 2rem 0rem 2rem;
+    }
+    #products {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin: 1rem 1rem;
+    margin-bottom: 2rem;
+    }
+    .vr-product {
+        max-width: 80%;
+    }
+    #footer {
+        div {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            gap: 0.5rem;
+            max-width: 100%;
+            margin-bottom: .8rem;
+            p:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            }
+        }
     }
 }
